@@ -68,7 +68,7 @@ with DAG('data_reconciliation', start_date=datetime(2022, 1, 1),
             );
         '''
     )
-#
+
     create_table_3 = PostgresOperator(
         task_id='create_table_3',
         postgres_conn_id='postgres',
